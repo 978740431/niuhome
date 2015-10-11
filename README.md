@@ -17,7 +17,11 @@
 >2. 编译的目录和源码目录不能相同否则编译会失败!!!!  
 >3. linux可能环境没有安装好,这个需要根据具体情况百度  
 >4. 如果编译失败的话请删除tengine重试
-3. 配置集群,进入/usr/local/tengine/conf目录修改nginx.conf配置文件,下面是一个配置好的范例,不需要看
+3. 进入/tengine/sbin/目录下启动tengine  
+        nginx #启动  
+        nginx -s reload #重启  
+        nginx -s stop  #停止
+4. 配置集群,进入/usr/local/tengine/conf目录修改nginx.conf配置文件,下面是一个配置好的范例,不需要看
         worker_processes  2;  
         error_log  logs/error.log;
         pid        logs/nginx.pid;
