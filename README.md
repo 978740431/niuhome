@@ -9,7 +9,7 @@
 
 ######安装步骤
 1. 上传tengine至usr/local目录  
-2. 编译tengine       ./configure --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_ssl_module
+2. 编译tengine      ./configure --prefix=/usr/local/nginx --with-http_stub_status_module --with-http_ssl_module
 
 
 
