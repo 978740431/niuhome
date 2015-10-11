@@ -25,10 +25,10 @@
             worker_connections  1024;
         }
         http {  
-        upstream snkefu-web{
-        server 218.244.149.110:8080;
-        server 218.244.149.110:9081;
-	   session_sticky;
+            upstream snkefu-web{
+                server 218.244.149.110:8080;
+                server 218.244.149.110:9081;
+	            session_sticky;
         }
 	    include       mime.types;
         default_type  application/octet-stream;
