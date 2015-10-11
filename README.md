@@ -18,12 +18,52 @@
 >3. linux可能环境没有安装好,这个需要根据具体情况百度  
 >4. 如果编译失败的话请删除tengine重试
 3. 配置集群,进入/usr/local/tengine/conf目录修改nginx.conf配置文件  
-       upstream snkefu-web{
-          server 218.244.149.110:8080;
-          server 218.244.149.110:9081;
-	      session_sticky;
-       }
-以上代码写在http{}里面,建议放在第一行
+    worker_processes  2;  
+    error_log  logs/error.log;
+    pid        logs/nginx.pid;
+    events {
+        worker_connections  1024;
+    }
+    http {  
+    upstream snkefu-web{
+        server 218.244.149.110:8080;
+        server 218.244.149.110:9081;
+	   session_sticky;
+    }
+	include       mime.types;
+    default_type  application/octet-stream;
+
+    log_format  main  '$remote_addr - $remote_user [$time_local] "$request" '
+                      '$status $body_bytes_sent "$http_referer" '
+                      '"$http_user_agent" "$http_x_forwarded_for"';
+    access_log  logs/access.log  main;
+    sendfile        on;
+    tcp_nopush     on;
+    server {
+    server_name snkefu.niuhome.com;
+    listen 443 ssl;
+    listen 80;
+    root /mnt;	
+    ssl_certificate conf_ssl/1_snkefu.niuhome.com_bundle.crt;
+    ssl_certificate_key conf_ssl/2_snkefu.niuhome.com.key;
+        location / {
+            #root   html;
+            #index  index.html index.htm;
+	  proxy_pass http://snkefu-web;
+	  proxy_redirect off;
+	  proxy_set_header HOST $host;
+	  proxy_set_header X-Real-IP $remote_addr;
+	  proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+	  proxy_set_header Host $host;
+    }
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
+        }
+    }
+    }
+以上代码写在http{}里面,建议放在第一行  
+作用:  
 
 
 
