@@ -7,4 +7,10 @@
 ######链接:http://tengine.taobao.org/
 >版本采用最新版2.1.1
 
+######安装步骤
+1.上传tengine至usr/local目录
+
+
+
+
 
