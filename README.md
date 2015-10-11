@@ -8,7 +8,8 @@
 >版本采用最新版2.1.1
 
 ######安装步骤
-1.上传tengine至usr/local目录
+*上传tengine至usr/local目录  
+2.编译tengine
 
 
 
