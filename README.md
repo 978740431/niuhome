@@ -56,11 +56,11 @@
 	    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
 	    proxy_set_header Host $host;
         }
-            error_page   500 502 503 504  /50x.html;
-            location = /50x.html {
-                root   html;
+                error_page   500 502 503 504  /50x.html;
+                location = /50x.html {
+                    root   html;
+                }
             }
-        }
         }
 以上代码写在http{}里面,建议放在第一行  
 作用:  
