@@ -62,7 +62,8 @@
             }
         }
 
-需要配置的部分:server{}和http{}部分
+>需要配置的部分:server{}和http{}部分  
+        server{} 
 
 
 
