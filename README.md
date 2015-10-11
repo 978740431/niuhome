@@ -63,7 +63,8 @@
         }
 
 >需要配置的部分:server{}和http{}部分(下面只写要改的部分)  
-        server{server_name snkefu.niuhome.com;  #域名  
+        server{  
+            server_name snkefu.niuhome.com;  #域名  
             location/{  
                 proxy_pass http://snkefu-web; #集群的配置  
             }  
