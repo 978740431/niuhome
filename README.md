@@ -64,7 +64,16 @@
 
 >需要配置的部分:server{}和http{}部分(下面只写要改的部分)  
         server{server_name snkefu.niuhome.com;  #域名  
-        } 
+            location/{  
+                proxy_pass http://snkefu-web; #集群的配置  
+            }  
+        }  
+        http {  
+            upstream snkefu-web{  #upstream后的内容必须和proxy_pass一样
+                server 218.244.149.110:8080;
+                server 218.244.149.110:9081;
+	            session_sticky;
+        }
 
 
 
