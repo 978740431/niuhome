@@ -39,28 +39,28 @@
         sendfile        on;
         tcp_nopush     on;
         server {
-        server_name snkefu.niuhome.com;
-        listen 443 ssl;
-        listen 80;
-        root /mnt;	
-        ssl_certificate conf_ssl/1_snkefu.niuhome.com_bundle.crt;
-        ssl_certificate_key conf_ssl/2_snkefu.niuhome.com.key;
-         location / {
-            #root   html;
-            #index  index.html index.htm;
-	    proxy_pass http://snkefu-web;
-	    proxy_redirect off;
-	    proxy_set_header HOST $host;
-	    proxy_set_header X-Real-IP $remote_addr;
-	    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-	    proxy_set_header Host $host;
-        }
-                error_page   500 502 503 504  /50x.html;
-                location = /50x.html {
-                    root   html;
+            server_name snkefu.niuhome.com;
+            listen 443 ssl;
+            listen 80;
+            root /mnt;	
+            ssl_certificate conf_ssl/1_snkefu.niuhome.com_bundle.crt;
+            ssl_certificate_key conf_ssl/2_snkefu.niuhome.com.key;
+            location / {
+                #root   html;
+                #index  index.html index.htm;
+	            proxy_pass http://snkefu-web;
+        	    proxy_redirect off;
+        	    proxy_set_header HOST $host;
+        	    proxy_set_header X-Real-IP $remote_addr;
+        	    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        	    proxy_set_header Host $host;
                 }
-            }
-        }
+                        error_page   500 502 503 504  /50x.html;
+                        location = /50x.html {
+                            root   html;
+                        }
+                    }
+                }
 
 
 
