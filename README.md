@@ -62,7 +62,7 @@
             }
         }
 
->需要配置的部分:server{}和http{}部分(下面只写要改的部分)  
+>需要配置的部分:server{}和http{}(下面只写要改的部分)  
 server{  
     server_name snkefu.niuhome.com;  #域名  
     location/{  
