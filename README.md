@@ -70,9 +70,9 @@
         }  
         http {  
             upstream snkefu-web{  #upstream后的内容必须和proxy_pass对应
-                server 218.244.149.110:8080; #两个服务器的地址
-                server 218.244.149.110:9081;
-	            session_sticky; #解决session复制
+                server 218.244.149.110:8080; #两个服务器的地址  
+                server 218.244.149.110:9081;  
+	            session_sticky; #解决session复制  
         }
 
 
