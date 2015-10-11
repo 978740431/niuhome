@@ -76,7 +76,7 @@ http {
         session_sticky; #解决session复制  
 }  
 ######原理
-浏览器访问snkefu.niuhome.com,被nginx拦截,nginx查看location的proxy_pass,proxy_pass决定打到那个地址.proxy_pass寻找配置文件里的snkefu-web地址,因为是集群,nginx默认设置的是轮询算法,
+浏览器访问snkefu.niuhome.com,被nginx拦截,nginx查看location的proxy_pass,proxy_pass决定打到那个地址.proxy_pass寻找配置文件里的snkefu-web地址,最终完成访问.nginx的集群默认是轮询算法,
 
 
 
