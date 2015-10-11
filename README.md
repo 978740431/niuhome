@@ -11,7 +11,8 @@
 1. 上传tengine至usr/local目录  
 2. 编译tengine  
 命令:./configure --prefix=/usr/local/tengine --with-http_stub_status_module --with-http_ssl_module  
-说明:将编译后的tengine放到/usr/local/tengine目录下,并且安装ssl模块
+说明:将编译后的tengine放到/usr/local/tengine目录下,并且安装ssl模块  
+错误:
 
 
 
