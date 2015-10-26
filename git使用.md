@@ -26,4 +26,6 @@ ps:一定要输入提交信息
 ###pull  
 1.选择要pull的文件 右击--git--repository--pull  
 
+##6..gitignore文件
+
 ##5. 错误
