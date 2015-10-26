@@ -30,6 +30,8 @@ ps:一定要输入提交信息
 1. 必须使用命令行操作,在项目根路径右击 git bash here,输入touch .gitignore  
 2. 可以vim编辑,也可以在idea里操作  
 /.idea/(忽略.idea文件夹下的所有文件)  
-*.iml(忽略所有.iml结尾的文件)
+*.iml(忽略所有.iml结尾的文件)  
+
+1. 如果之前已经push过,.gitignore是没有用的,需要清除关联的缓存
 
 ##5. 错误
