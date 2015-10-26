@@ -26,6 +26,7 @@ ps:一定要输入提交信息
 ###pull  
 1.选择要pull的文件 右击--git--repository--pull  
 
-##6..gitignore文件
+##6. .gitignore文件  
+1. 必须使用命令行操作,在项目根路径右击 git bash here,输入touch .gitignore
 
 ##5. 错误
