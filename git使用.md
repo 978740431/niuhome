@@ -37,6 +37,14 @@ ps:一定要输入提交信息
 步骤:  
     1. git rm --cached .idea/(清除.idea下所有的缓存,递归的话需要-rf)  
     2. 输入git commit -a 将相应的#号去掉  
-    3. 别忘了写.gitignore文件
+    3. 别忘了写.gitignore文件  
+    
+##7.更换远程仓库  
+1. 删除之前的.git文件  
+2. git init  
+3. git remote add origin 仓库地址  
+4. git fetch origin  
+5. git add .  
+6. git commit -m "project init"(-m可以不写,""里为提交信息)
 
 ##5. 错误
