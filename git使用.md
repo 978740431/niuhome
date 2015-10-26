@@ -36,6 +36,7 @@ ps:一定要输入提交信息
 注:如果之前已经push过,.gitignore是没有用的,需要清除关联的缓存  
 步骤:  
     1. git rm --cached .idea/(清除.idea下所有的缓存,递归的话需要-rf)  
-    (还是有问题,正在解决)
+    2. 输入git commit -a 将相应的#号去掉  
+    3. 别忘了写.gitignore文件
 
 ##5. 错误
