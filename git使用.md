@@ -27,6 +27,9 @@ ps:一定要输入提交信息
 1.选择要pull的文件 右击--git--repository--pull  
 
 ##6. .gitignore文件  
-1. 必须使用命令行操作,在项目根路径右击 git bash here,输入touch .gitignore
+1. 必须使用命令行操作,在项目根路径右击 git bash here,输入touch .gitignore  
+2. 可以vim编辑,也可以在idea里操作  
+/.idea/(忽略.idea文件夹下的所有文件)  
+*.iml(忽略所有.iml结尾的文件)
 
 ##5. 错误
