@@ -47,6 +47,6 @@ ps:一定要输入提交信息
 5. git checkout master
 6. git add .  
 7. git commit -m "project init"(-m可以不写,""里为提交信息)  
-8. git push master
-
+8. git push master  
+解释:第四部是将远程仓库拉倒本地仓库,需要第5部将代码从本地仓库拉出来
 ##5. 错误
