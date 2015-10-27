@@ -43,8 +43,10 @@ ps:一定要输入提交信息
 1. 删除之前的.git文件  
 2. git init  
 3. git remote add origin 仓库地址  
-4. git fetch origin  
-5. git add .  
-6. git commit -m "project init"(-m可以不写,""里为提交信息)
+4. git fetch origin 
+5. git checkout master
+6. git add .  
+7. git commit -m "project init"(-m可以不写,""里为提交信息)  
+8. git push master
 
 ##5. 错误
