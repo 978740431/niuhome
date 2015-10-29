@@ -8,7 +8,7 @@
 ##2. 在idea中集成  
 1. file--setting--version control--git,右侧选择path to git executetable.选择本地的git.exe,如G:\worksoft\Git\bin\git.exe,选择test,弹出成功即可  
 
-##3. git的使用说明  
+##3. git的使用之前的说明(理念,必读)  
 git和svn不同,git需要每个人都有一个单独的分支,每次提交到自己的分支上,如果B需要你的代码,则首先将你的代码merge(合并)到一个类似测试版本上(测试版就是一个分支而已)接着B将他的分支切换到测试版本,然后拉代码.当需要发布正式版的时候再将测试版的代码合并到master上.
 ##3. 使用git
 1. 在任意位置新建文件夹作为git起始目录  
