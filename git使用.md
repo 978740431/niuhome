@@ -34,7 +34,11 @@ ps:一定要输入提交信息
 2. 右击刚刚的文件--git--repository--push  
  
 ###命令行操作方式如下  
-####提交所有的改动
+####提交所有的改动  
+1. git add . (这步我也不清楚,先用)  
+2. git commit -m"test"(-m的意思是可以不写提交信息,""里的内容为提交信息)  
+3. git push(提交到远程仓库)
+
 
 ###pull  
 1.选择要pull的文件 右击--git--repository--pull  
