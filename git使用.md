@@ -18,11 +18,13 @@ git和svn不同,git需要每个人都有一个单独的分支,每次提交到自
 5. git checkout nmw_zn (nmw_zn是分支名,根据自己的分支改动)  
  
 
-下面的部分放弃,最好用命令好操作git
+下面的4步放弃,最好用命令好操作git  
+==
 3. 进入idea,选择vcs--checkout from version control--git  
 4. 复制公司的项目托管地址,粘贴到git repository url,选择test,弹出成功即可  
 5. parent directory选择刚刚创建的目录 directory name输入项目名称,点击clone  
-6. 右上角出现maven projects need to be improted,选择import changes  
+6. 右上角出现maven projects need to be improted,选择import changes 
+
 
 ##5. push & pull  
 注意:右击项目,如果没有出现git说明项目没有和git关联上,查看项目所在的目录有没有.git文件夹  
