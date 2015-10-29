@@ -18,7 +18,7 @@ git和svn不同,git需要每个人都有一个单独的分支,每次提交到自
 5. git checkout nmw_zn (nmw_zn是分支名,根据自己的分支改动)  
  
 
-下面的4步放弃,最好用命令好操作git  
+下面的4步放弃,最好用命令行操作git  
 ==
 3. 进入idea,选择vcs--checkout from version control--git  
 4. 复制公司的项目托管地址,粘贴到git repository url,选择test,弹出成功即可  
