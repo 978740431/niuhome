@@ -32,9 +32,13 @@ git和svn不同,git需要每个人都有一个单独的分支,每次提交到自
 1. 右击要提交的文件--git--if("第一次提交"){选择add}else{commit file},此步骤为提交到git(这个步骤还没理解,还可能为提交到本地仓库,还需要同步到github上)  
 ps:一定要输入提交信息
 2. 右击刚刚的文件--git--repository--push  
+ 
+###命令行操作方式如下  
+####提交所有的改动
 
 ###pull  
 1.选择要pull的文件 右击--git--repository--pull  
+
 
 ##6. .gitignore文件  
 1. 必须使用命令行操作,在项目根路径右击 git bash here,输入touch .gitignore  
