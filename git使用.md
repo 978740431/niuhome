@@ -47,13 +47,13 @@ ps:一定要输入提交信息
 ###pull  
 1.选择要pull的文件 右击--git--repository--pull  
 
-##拉meger的代码  
+##7. 拉meger的代码  
 1. 合并meger和自己代码,源代码meger,目标自己的分支  
 2. pull  
 3. 如果自己有代码没提交的,在合并之前之后操作都可以,一般不会被冲掉.
 
 
-##6. .gitignore文件  
+##8. .gitignore文件  
 1. 必须使用命令行操作,在项目根路径右击 git bash here,输入touch .gitignore  
 2. 可以vim编辑,也可以在idea里操作  
 /.idea/(忽略.idea文件夹下的所有文件)  
@@ -66,7 +66,7 @@ ps:一定要输入提交信息
     2. 输入git commit -a 将相应的#号去掉  
     3. 别忘了写.gitignore文件  
     
-##7.更换远程仓库  
+##9.更换远程仓库  
 1. 删除之前的.git文件  
 2. git init  
 3. git remote add origin 仓库地址  
@@ -77,11 +77,11 @@ ps:一定要输入提交信息
 8. git push master  
 解释:第四部是将远程仓库拉倒本地仓库,需要第5部将代码从本地仓库拉出来  
 
-##8. 更换分支  
+##10. 更换分支  
 1. 创建分支:直接在网站上创建新的分支  
 2. git fetch origin(同步远程仓库的分支)  
 3. git pull(再拉一次项目,保证正确)  
 4. git checkout "分支名"  
 
-##5. 错误
+##11. 错误
 1.在本地仓库中,但是没有提交到远程仓库,需要删除那个文件,再pull
