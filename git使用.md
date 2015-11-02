@@ -47,6 +47,11 @@ ps:一定要输入提交信息
 ###pull  
 1.选择要pull的文件 右击--git--repository--pull  
 
+##拉meger的代码  
+1. 合并meger和自己代码,源代码meger,目标自己的分支  
+2. pull  
+3. 如果自己有代码没提交的,在合并之前之后操作都可以,一般不会被冲掉.
+
 
 ##6. .gitignore文件  
 1. 必须使用命令行操作,在项目根路径右击 git bash here,输入touch .gitignore  
