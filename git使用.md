@@ -85,3 +85,12 @@ ps:一定要输入提交信息
 
 ##11. 错误
 1.在本地仓库中,但是没有提交到远程仓库,需要删除那个文件,再pull
+
+
+##12. 解决冲突
+1. git checkout merge(冲突的分支名)(作用:切换到merge分支)
+2. git pull(将分支的代码拉取到本地)
+3. git checkout nmw_zn(切换回分支)
+4. git merge merge(merge合并到nmw_zn上,要在nmw_zn上执行操作)
+5. git commit -a -m "fix commit"(提交到本地)
+6. git push(提交到远程仓库)
