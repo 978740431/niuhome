@@ -94,3 +94,11 @@ ps:一定要输入提交信息
 4. git merge merge(merge合并到nmw_zn上,要在nmw_zn上执行操作)
 5. git commit -a -m "fix commit"(提交到本地)
 6. git push(提交到远程仓库)
+
+
+##13. 删除已经在线上的文件或文件夹
+git rm -r --cached 
+git add .
+git commit -m 'update .gitignore'
+
+-r 递归, --cached后面跟文件或文件夹
