@@ -101,4 +101,4 @@ git rm -r --cached
 git add .
 git commit -m 'update .gitignore'
 
--r 递归, --cached后面跟文件或文件夹
+-r 递归, --cached后面跟文件或文件夹,需要相对.gitignore路径
