@@ -106,3 +106,7 @@ git add .
 git commit -m 'update .gitignore'
 
 -r 递归, --cached后面跟文件或文件夹,需要相对.gitignore路径
+
+git add之后可以通过 
+git rm -r --cached .
+撤销之前的add
