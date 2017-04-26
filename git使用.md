@@ -110,3 +110,8 @@ git commit -m 'update .gitignore'
 git add之后可以通过 
 git rm -r --cached .
 撤销之前的add
+
+
+恢复单个文件
+cd到你需要恢复文件的
+
