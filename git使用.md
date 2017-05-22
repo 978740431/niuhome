@@ -109,7 +109,12 @@ git commit -m 'update .gitignore'
 
 git add之后可以通过 
 git rm -r --cached .
+zhangnan$ git rm --cached .idea/workspace.xml 
 撤销之前的add
+
+
+git stash pop
+git stash
 
 
 ### 恢复单个文件
