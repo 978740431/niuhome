@@ -100,7 +100,7 @@ git remote set-url origin 仓库地址
 6. git push(提交到远程仓库)
 
 
-##13. 删除已经在线上的文件或文件夹
+##13. 删除已经在线上的文件或文件夹  
 git rm -r --cached   
 git add .  
 git commit -m 'update .gitignore'  
