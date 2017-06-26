@@ -101,9 +101,9 @@ git remote set-url origin 仓库地址
 
 
 ##13. 删除已经在线上的文件或文件夹
-git rm -r --cached 
-git add .
-git commit -m 'update .gitignore'
+git rm -r --cached   
+git add .  
+git commit -m 'update .gitignore'  
 
 -r 递归, --cached后面跟文件或文件夹,需要相对.gitignore路径
 
