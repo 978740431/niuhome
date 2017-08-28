@@ -99,6 +99,9 @@ git remote set-url origin 仓库地址
 5. git commit -a -m "fix commit"(提交到本地)
 6. git push(提交到远程仓库)
 
+清除xxx的操作,不是很明白,但是把uncheck里面的内容给删掉了
+git clean  -d  -fx ""
+详见:  https://stackoverflow.com/questions/4858047/the-following-untracked-working-tree-files-would-be-overwritten-by-checkout
 
 ## 13. 删除已经在线上的文件或文件夹  
 git rm -r --cached   
