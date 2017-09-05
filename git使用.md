@@ -128,3 +128,6 @@ git log 文件名(注:需要.java之类的后缀)
 git reset 提交历史号    文件名 
 OK,牛逼的是他会将依赖的文件也回滚
 
+
+### 将本地分支上传到远程
+git push origin test_new
