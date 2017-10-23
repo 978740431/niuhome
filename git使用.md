@@ -131,3 +131,7 @@ OK,牛逼的是他会将依赖的文件也回滚
 
 ### 将本地分支上传到远程
 git push origin test_new
+
+
+### 撤销到上一步,知道add . 之后是有用的
+git reset
